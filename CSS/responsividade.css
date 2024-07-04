@@ -1,0 +1,47 @@
+@media screen and (max-width: 640px){
+
+    .logo{
+        margin:0 auto;
+        width: 50vw;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    .logo h1{
+        font-size: 1rem;
+    }
+
+    .main{
+        flex-direction: column-reverse;
+        margin:  3.13rem 0;
+    }
+
+    .produtos{
+        margin: 0 auto;
+    }
+
+    .produtos__container{
+        width: 29.75rem;
+        margin: 0 7%;
+    }
+
+    .section_titulo{
+        margin: 1rem 7%;
+        width: 80vw;
+    }
+
+    .formulario{
+        margin:0 auto;
+        width: 90vw;
+    }
+
+    footer > .logo{
+        margin-left: auto;
+    }
+
+    .rodape_texto{
+        margin-left: auto;
+    }
+}

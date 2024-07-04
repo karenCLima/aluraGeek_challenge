@@ -1,0 +1,253 @@
+:root{
+    --fonte-primaria: "Press Start 2P", system-ui;
+    --fonte-secundaria: "IBM Plex Mono", monospace;
+    --cor-primaria: #5300C8;
+    --cor-secundaria: #03318C;
+    --cor-terciaria: #5D04D9;
+    --cor-texto: #E5E5E5;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 6rem;
+    background-color: var(--cor-primaria);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 23.38rem;
+    height: 3.5rem;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo img{
+    width: 8.63rem;
+    height: 100%;
+}
+
+.logo h1{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+
+}
+
+/* MAIN */
+
+.main{
+    margin: 3.13rem auto;
+    display: flex;
+}
+
+/* PRODUTOS */
+
+.produtos{
+    width: 51.88rem;
+    height: 69.69rem;
+    margin: 3.75rem 4.38rem 3.75rem 2.5rem;
+}
+
+.section_titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    margin: 2.5rem 5.63rem;
+    text-align: center;
+}
+
+.produtos__container{
+    box-sizing: border-box;
+    box-shadow: -10px 10px 7px -2px rgba(0,0,0,0.3);
+    width: 43.75rem;
+    height: 60.69rem;
+    margin: 2.5rem;
+    overflow: auto;
+    scrollbar-arrow-color: transparent;
+}
+
+.produtos__container__lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+
+.produto__card{
+    margin: 0.94rem;
+    width: 12.25rem;
+    height: 16.13rem;
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
+    border: 4px solid black;
+    box-sizing: border-box;
+
+}
+
+.produto__card__principal img{
+    width: 10.63rem;
+    height: 10.75rem;
+    border-radius: 5px;
+    margin: 0.63rem;
+    box-sizing: border-box;
+}
+
+.produto__card__principal p{
+    width: 11rem;
+    height: 1.25rem;
+    color: #ffffff;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.94rem;
+    padding: 0 0.63rem 0.63rem 0.63rem;
+}
+
+.produto__card__info{
+    display: flex;
+    gap:4.38rem;
+    width: 11rem;
+    height: 1.5rem;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+.produto__card__info p{
+    color: #ffffff;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    font-size: 0.94rem;
+}
+
+.produto__card__info img{
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    width: 29.5rem;
+    height: 32.31rem;
+    display: flex;
+    flex-direction: column;
+    margin: 3.75rem 1.5rem 41.13rem 4.38rem;
+}
+
+.formulario_titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 24.5rem;
+    height: 3rem;
+    margin: 1.5rem;
+}
+
+.form__input{
+    width: 24.5rem;
+    height: 3.63rem;
+    border-radius: 30px;
+    border: 3px solid var(--cor-secundaria);
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    color:var(--cor-secundaria);
+    font-size: 1.13rem;
+}
+
+.formulario__botoes{
+    display: flex;
+    gap: 0.81rem;
+    width: 24.5rem;
+    height: 3.44rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.botao{
+    width: 11.75rem;
+    height: 3.44rem;
+    border-radius: 15px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.formulario__botoes__guardar{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+.formulario__botoes__guardar:hover{
+    background-color: var(--cor-terciaria);
+}
+
+.formulario__botoes__limpar{
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+.formulario__botoes__limpar:hover{
+    border-color: var(--cor-terciaria);
+    color: var(--cor-terciaria);
+
+}
+
+/* FOOTER */
+
+.rodape{
+    width: 100%;
+    height: 14.5rem;
+    background-color: var(--cor-primaria);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > .logo{
+    margin-top: 4rem;
+}
+
+.rodape_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0.75rem auto;
+    width: 16.81rem;
+    height: 3rem;
+    color: var(--cor-texto);
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.rodape_texto .copyright{
+    color: grey;
+}
+
+/* Customização do scrollbar para navegadores WebKit */
+.produtos__container::-webkit-scrollbar {
+    width: 10px;  /* Largura do scrollbar vertical */
+    height: 3px;  /* Altura do scrollbar horizontal */
+}
+
+.produtos__container::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Cor do fundo do track */
+    border-radius: 10px;  /* Bordas arredondadas */
+}
+
+.produtos__container::-webkit-scrollbar-thumb {
+    background: #888;  /* Cor do thumb */
+    border-radius: 10px;  /* Bordas arredondadas */
+}
+
+.produtos__container::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Cor do thumb ao passar o mouse */
+}
+
+/* Remover as setas de scroll (arrows) */
+.produtos__container::-webkit-scrollbar-button {
+    display: none;  /* Remove as setas */
+}
