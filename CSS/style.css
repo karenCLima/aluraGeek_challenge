@@ -193,6 +193,15 @@ header{
 
 }
 
+.erro{
+    display: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+    margin: -19px 0 8px 54px;
+
+}
+
 /* FOOTER */
 
 .rodape{
